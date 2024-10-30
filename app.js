@@ -3,7 +3,7 @@ let respData;
 
 async function getMovies (url) {
   const resp = await fetch(url);
-  const respData = await resp.json();
+  respData = await resp.json();
 
   console.log(respData);
 
